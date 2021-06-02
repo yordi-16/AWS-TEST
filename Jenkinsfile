@@ -49,7 +49,7 @@ pipeline {
             }
             steps {
                 echo 'Terraform Destroy...'
-                 sh 'terraform destroy -force'
+                 sh 'terraform destroy -auto-approve'
             }
         }
     }
