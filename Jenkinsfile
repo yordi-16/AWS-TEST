@@ -1,5 +1,4 @@
 // declarative
-properties([pipelineTriggers([githubPush()])])
 pipeline {
     agent any 
     parameters {
