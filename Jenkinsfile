@@ -12,15 +12,15 @@ pipeline {
             steps {
                 echo 'Authenticating using AWS credentials...'
                 withAWS (credentials: 'cyrille-aws-cred', region: 'us-east-1') {
-                    bat 'aws iam get-user'
+                    sh 'aws iam get-user'
                 }
             }
         }
         stage ('terraform init') {
             steps {
                 echo 'Initializing Terraform...'
-                bat 'terraform init'
-                bat 'terraform plan'
+                sh 'terraform init'
+                sh 'terraform plan'
             }
         }
         stage ('Approval') {
@@ -38,7 +38,7 @@ pipeline {
             }
             steps {
                 echo 'Terraform Apply...'
-                 bat 'terraform apply -auto-approve'
+                 sh 'terraform apply -auto-approve'
             }
         }
         stage ('Terraform Destroy') {
@@ -49,7 +49,7 @@ pipeline {
             }
             steps {
                 echo 'Terraform Destroy...'
-                 bat 'terraform destroy --force'
+                 sh 'terraform destroy --force'
             }
         }
     }
