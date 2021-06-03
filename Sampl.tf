@@ -14,11 +14,11 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-resource "aws_instance" "my_app_servers" {
-   ami           = "aws_ami-0b0af3577fe5e3532"
-   instance_type = "t2.micro"
+resource "aws_instance" "my_app_server" {
+  ami           = "ami-0d5eff06f840b45e9"
+  instance_type = "t2.micro"
 
-   tags = {
-     Name = "myinstances30"
-   }
- }
+  tags = {
+    Name = "myinstances2812"
+  }
+}
