@@ -11,7 +11,7 @@ pipeline {
         stage ('Authenticate AWS') {
             steps {
                 echo 'Authenticating using AWS credentials...'
-                withAWS (credentials: 'cyrille-aws-cred', region: 'us-east-1') {
+                withAWS (credentials: 'New_Aim_User', region: 'us-east-1') {
                     sh 'aws iam get-user'
                 }
             }
