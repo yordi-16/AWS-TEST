@@ -23,7 +23,7 @@ provider "aws" {
 #   }
 # }
 resource "aws_s3_bucket" "Firstname2" {
-  bucket = "nonvigno-bucket15"
+  bucket = "nonvigno-bucket12"
   acl    = "private"
 
   tags = {
