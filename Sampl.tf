@@ -14,15 +14,15 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-# resource "aws_instance" "my_app_server" {
-#   ami           = data.aws_ami.amixx.id
-#   instance_type = "t2.micro"
+ resource "aws_instance" "my_app_server" {
+   ami           = data.aws_ami-0d5eff06f840b45e9
+   instance_type = "t2.micro"
 
-#   tags = {
-#     Name = "myinstances32"
-#   }
-# }
-resource "aws_s3_bucket" "Firstname2" {
+   tags = {
+     Name = "myinstances30"
+   }
+ }
+#resource "aws_s3_bucket" "Firstname2" {
   bucket = "nonvigno-bucket12"
   acl    = "private"
 
