@@ -22,33 +22,3 @@ provider "aws" {
      Name = "myinstances30"
    }
  }
-#resource "aws_s3_bucket" "Firstname2" {
-  bucket = "nonvigno-bucket12"
-  acl    = "private"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
-// variable
-// varibale.tfvar
-// variable "aws_access_key" {
-#   "asdasdas"
-# }
-
-// provider
-
-// data 
-# data "aws_ami" "amixx" {
-  
-# }
-
-// resource
-
-// output 
-
-# output "aws_public_ip" {
-#   value = "aws_instance.my_app_server.public_dns"
-# }
