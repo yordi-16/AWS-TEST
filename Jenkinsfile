@@ -52,5 +52,10 @@ pipeline {
                  sh 'terraform destroy -auto-approve'
             }
         }
+        stage ('Email recipients') {
+            emailext attachLog: true, body: '$DEFAULT_BODY', subject: '$DEFAULT_SUBJECT', to: 'sibtain.abbas10@gmail.com'
+        }
+
+       
     }
 }
