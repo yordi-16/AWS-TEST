@@ -54,7 +54,7 @@ pipeline {
         }
         stage ('Email recipients') {
             steps {
-                emailext attachLog: true, body: '$DEFAULT_BODY', subject: '$DEFAULT_SUBJECT', to:'houetofifame1@gmail.com' 
+                emailext attachLog: true, body: '$DEFAULT_CONTENT HI this is new.', subject: '$DEFAULT_SUBJECT', to:'houetofifame1@gmail.com' 
             }
         }
     
