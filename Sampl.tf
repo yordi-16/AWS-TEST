@@ -113,7 +113,7 @@ resource "aws_security_group" "allow_web" {
 resource "aws_network_interface" "test" {
   subnet_id       = aws_subnet.subnet1.id
   private_ips     = ["10.0.1.51"]
-  security_groups = aws_security_group.allow_web.id
+  security_groups = [aws_security_group.allow_web.id]
 }
 
 #8- Create Elastic IP
