@@ -22,7 +22,7 @@
 #  instance_type = "t2.micro"
 
 #  tags = {
-#    Name = "myinstance25"
+#    Name = "myinstance6785"
 #  }
 # }
 
