@@ -1,30 +1,30 @@
 # CTRL + A --- select all text
 # CTRL + / --- comment /uncomment 
 
-# terraform {
-#   required_providers {
-#     aws = {
-#       source  = "hashicorp/aws"
-#       version = "~> 3.27"
-#     }
-#   }
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.27"
+    }
+  }
 
  
-# }
+}
 
-# provider "aws" {
-#  region  = "us-east-1"
-#  profile = "default"
-# }
+provider "aws" {
+ region  = "us-east-1"
+ profile = "default"
+}
 
-# resource "aws_instance" "my_app_server" {
-#  ami           = "ami-0d5eff06f840b45e9"
-#  instance_type = "t2.micro"
+resource "aws_instance" "my_app_server" {
+ ami           = "ami-0d5eff06f840b45e9"
+ instance_type = "t2.micro"
 
-#  tags = {
-#    Name = "myinstance6785"
-#  }
-# }
+ tags = {
+   Name = "myinstance25"
+ }
+}
 
 # # 1-Create a VPC
 # resource "aws_vpc" "Production" {
