@@ -18,11 +18,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_app_server" {
- ami           = "ami-0d5eff06f840b45e9"
+ ami           = "ami-0c2b8ca1dad447f8a"
  instance_type = "t2.micro"
 
  tags = {
-   Name = "yordi-one"
+   Name = "Ec2-one"
  }
 }
 
